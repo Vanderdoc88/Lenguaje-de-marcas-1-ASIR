@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro>
+        <titulo>Death note</titulo>
+        <autor>Tsugumi Ōba</autor>
+    </libro>
+
+    <libro>
+        <titulo>Capitán Alatriste</titulo>
+        <autor>Arturo Perez Reverte</autor>
+    </libro>
+</biblioteca>
