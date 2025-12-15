@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto; 
+    padding: 0 20px;
+}
+
+
+h1 {
+    color: var(--color-main);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 50px;
+    
+    border-bottom: 3px solid var(--color-main);
+    padding-bottom: 10px;
+}
+
+
+h2 {
+    color: #4CAF50; 
+    font-size: 1.6em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+.lista {
+    list-style: none; 
+    padding: 20px 30px;
+    margin-top: 15px;
+    background-color: #ffffff; 
+    border-left: 5px solid #4CAF50; 
+    border-radius: 8px; 
+}
+
+
+.lista li {
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+}
+
+
+.lista li:hover {
+    color: #007bff; 
+    background-color: #f7f9fc; 
+    padding-left: 10px; 
+}
+
+
+.background, .text, .border, .tablas {
+    background-color: var(--color-card);
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--color-shadow);
+    transition: transform 0.3s;
+}
+
+
+.background:hover, .text:hover, .border:hover, .tablas:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.background p, .text p, .border p, .tablas p {
+    font-style: italic;
+    color: var(--color-text-light);
+    border-bottom: 1px dashed var(--color-background);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    padding: 5px;
+    background-color: #f4f6f8; 
+}
+
+
+
+.background {
+    border-left: 5px solid #e74c3c; 
+}
+
+.text {
+    border-left: 5px solid #f39c12; 
+}
+
+.border {
+    border: 3px solid #9b59b6; 
+}
+
+
+.pdf {
+    text-align: center; 
+    margin: 30px 0; 
+}
+
+
+.pdf a {
+    display: inline-block; 
+    background-color: #e74c3c; 
+    color: white; 
+    padding: 12px 25px; 
+    border-radius: 6px; 
+    text-decoration: none; 
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+.pdf a:hover {
+    background-color: #c0392b; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+.pdf a::before {
+    content: "⬇️ "; 
+    margin-right: 5px;
+}
+
+.menu {
+    background-color: #2c3e50; 
+    padding: 12px 0;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0 20px;
+    transition: color 0.3s; 
+}
+
+.menu a:hover {
+    color: #1abc9c; 
+}
+
+.menu br {
+    display: none; 
+}
+
+</style>
+</head>
+
+<body>
+
+    <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="#enlace">HTML</a>
+    <a href="svg.html">SVG</a>
+    <a href="css.html">CSS</a>
+    </nav>
+
+    <h1>HTML tutorial</h1>
+    <h2>Indice</h2>
+    <ol class="lista">
+        <li>Colors</li>
+        <li>Tables</li>
+        <li>divs</li>
+    </ol>
+
+    <h1>1. Colors</h1>
+    <h2>Background Color</h2>
+    <img src="img/background color.png">
+    <div class="background">
+        <p>Example</p>
+        <img src="img/background color example.png">
+    </div>
+
+    <h2>Text color</h2>
+    <img src="img/text color.png">
+    <div class="text">
+        <p>Example</p>
+        <img src="img/text color example.png">
+    </div>
+
+    <h2>Border color</h2>
+    <img src="img/border color.png">
+    <div class="border">
+        <p>Example</p>
+        <img src="img/border color example.png">
+    </div>
+
+    <h2>2. Table</h2>
+    <img src="img/Table example.png">
+    <div class="tablas">
+        <p>Example</p>
+        <img src="img/table css.png">
+        <img src="img/table html.png">
+    </div>
+    
+    <div class="pdf">
+        <a href="pdf/HTML tutorial.pdf" title="descargar documentacion pdf">Descargar PDF</a>
+    </div>
+</body>
+</html>
+
